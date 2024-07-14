@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* =======================================
+                 Banner
+   =======================================
+*/
+.banner {
+    background-image: url(../images/contactUs_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* adjust according to screen size */
+@media (max-width:576px) {
+    .banner {
+        padding: 30% 0;
+    }
+
+    .second_segment img {
+        width: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width:576px) {
+    .banner {
+        padding: 15% 0;
+    }
+}
+
+/* =======================================
+              Contact Form
+   =======================================
+*/
+.contact_us {
+    max-width: 1000px;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(199,195,199,1);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(199,195,199,1);
+    box-shadow: 10px 10px 15px 0px rgba(199,195,199,1);
+    position: relative;
+    margin: 50px auto;
+}
+
+.contact_us .title {
+    letter-spacing: 3px;
+    color: #42378f;
+    background: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-group {
+    margin: 20px 0;
+}
+
+.contact-form .form-control {
+    border-width: 0 0 2px 0;
+    border-color: #42378f;
+}
+
+input:focus, input.form-control:focus, select:focus, select.form-control:focus, textarea:focus ,textarea.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.contact-form .label {
+    color: #42378f ;
+    cursor: text;
+    font-size: 1.2em;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form textarea:hover, 
+.contact-form input[type="email"]:hover,
+.contact-form input[type="tel"]:hover,
+.contact-form select:hover {
+    background-color: #dddaf1;
+}
+
+.contact-form .submit-btn {
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    border: none;
+    font-size: 1.4em;
+}
+
+.contact-form .submit-btn:hover {
+    transform: scale(0.9);
+    transition: .3s ease;
+}
+
+section, form.contact_us {
+    background-color: #f3f2f2;
+}

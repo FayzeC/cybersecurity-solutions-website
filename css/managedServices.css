@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* =======================================
+                Banner Styles
+   =======================================
+*/
+/* Insert image */
+.banner {
+    background-image: url(../images/managedservices_Header.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/* =======================================
+                Section Styles
+   =======================================
+*/
+.section_one, .newsletter {
+    background-color: #e7e5e6;
+}
+
+.section_one p > a:hover {
+    text-decoration: none;
+    color: violet;
+}
+
+/* =======================================
+                Carousel Styles
+   =======================================
+*/
+.carousel {
+    background-color: #05122c;
+    min-height: 400px;
+}
+
+/* =======================================
+                Table  Styles
+   =======================================
+*/
+.priceTable {
+    background-color: #f3f2f2;
+}  
+
+
+table, th, td {
+    border: 1px solid black;
+}
+  
+th, td {
+    text-align: center;
+    padding: 4%;
+}
+  
+th {
+    background-color: tomato;
+    color: black;
+}
+  
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: linen;
+}
+
+/* @media rule to adjust according to screen size */
+@media (max-width:576px) {
+    .banner {
+        padding: 30% 0;
+    }
+
+    .second_segment img {
+        width: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width:576px) {
+    .banner {
+        padding: 15% 0;
+    }
+}

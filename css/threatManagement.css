@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* =======================================
+                Banner
+   =======================================
+*/
+/* insert image */
+.banner {
+    background-image: url(../images/threatManagement_header.jpg);
+    background-repeat: no-repeat;
+}
+
+/* =======================================
+                Section Styles
+   =======================================
+*/
+.section_one, .section_three {
+    background-color: #f3f2f2;
+}
+
+.section_two, .newsletter{
+    background-color: #e7e5e6;
+}
+
+/* =======================================
+             Carousel Styles
+   =======================================
+*/
+.carousel{
+    background-color: #05122c;
+    min-height: 370px;
+}
+
+.carousel-item ul li {
+    color: white;
+}
+
+/* @media rule to adjust according to screen size */
+@media (max-width:576px) {
+    .banner {
+        padding: 30% 0;
+    }
+
+    .second_segment img {
+        width: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width:576px) {
+    .banner {
+        padding: 15% 0;
+    }
+}

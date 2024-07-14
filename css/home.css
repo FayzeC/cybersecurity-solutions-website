@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* =======================================
+                  Banner
+   =======================================
+*/
+/* insert bakcground image */
+.banner {
+    background-image: url(../images/home_Header.jpg);
+}
+
+
+/* adjust according to screen size */
+@media (max-width:576px) {
+    .banner {
+        padding: 30% 0;
+    }
+}
+
+@media (min-width:576px) {
+    .banner {
+        padding: 15% 0;
+    }
+} 
+
+
+/* =======================================
+    Award and Certificate Section Styles
+   =======================================
+*/
+.award {
+    background-color: #e7e5e6;
+}
+
+.award p {
+    font-size: 1.6em;
+}
+
+/* =======================================
+        Newsletter and Section Styles
+   =======================================
+*/
+section.cards, .newsletter{
+    background-color: #f3f2f2;
+}
+
+/* =======================================
+        Carousel(comments) Styles
+   =======================================
+*/
+section.comments {
+    background-color: #e7e5e6;
+}
+
+blockquote.carousel-item {
+    min-height: 290px;
+}
+
+blockquote > p.quote:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    padding: 2%;
+}
+
+blockquote > p.quote:after {
+    content: "\f10e";
+    font-family: FontAwesome;
+    padding: 2%;
+}
+
+/* @media rule to adjust according to screen size */
+@media (max-width:576px) {
+    .blockquote p {
+        font-size: 0.8em;
+    }
+
+    .second_segment img {
+        width: 20%;
+        margin-bottom: 20%;
+    }
+    
+}
+
+@media (min-width:576px) {
+    .banner {
+        padding: 10% 0;
+    }
+}
+
