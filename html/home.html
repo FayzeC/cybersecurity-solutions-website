@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- font awesome cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- animate.css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- wow js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- general css stylesheet -->
+  <link href="../css/general.css" rel="stylesheet" type="text/css" />
+  <!-- home page css stylesheet -->
+  <link href="../css/home.css" rel="stylesheet" type="text/css" />
+  <!-- timer js file -->
+  <script src="../js/timer.js" defer></script>
+  <!-- contains script for wow js -->
+  <script src="../js/wow.js" defer></script>
+  <title>CyberAlertz</title>
+</head>
+
+<body>
+  <!--**************************************** NAVIGATION BAR ****************************************-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="home.html" class="navbar-brand">
+        <img src="../images/logo.png" alt="logo" class="logo" />
+      </a>
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+        data-target="#menuItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2 " href="home.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="securityAssessment.html">Security
+              Assessment</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="threatManagement.html">Threat
+              Management</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="managedServices.html">Managed
+              Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="contactUs.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" target="_blank"
+              href="citation.html">Citation</a>
+          </li>
+
+        </ul>
+      </div> <!-- navbar-collapse -->
+    </nav>
+  </header>
+
+
+  <!--**************************************** BANNER ****************************************-->
+  <section class="banner">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 text-light wow animate__animated animate__fadeInLeft">
+          <h1 id="top">CyberAlertz</h1>
+          <p class="font-italic">The Future of Cybersecurity</p>
+          <p>Hackers are getting more and more sophisticated so should you. With the rise of cyber attacks
+            it wont be a matter of time until you become the next target. </p>
+          <p>Thats where we come in to help!</p>
+          <a href="#aboutUs" class="button">Read More</a>
+        </div>
+        <!--col-->
+
+        <div class="col-lg-6 col-md-4 col-sm-12 text-light">
+          <div id="timer">
+            <p class="text-light"><span id="day"></span> , <span id="date"></span> <br /> </p>
+            <p class="text-light">You've been reading for:</p>
+            <p class="text-light"><span id="minutes"></span> minutes : <span id="seconds"></span> seconds </p>
+          </div> <!-- timer -->
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </section>
+
+
+  <!--**************************************** PAGE INTRODUCTION ****************************************-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-danger text-uppercase text-center mt-5 mb-4 wow animate__animated animate__rubberBand"
+          id="aboutUs">Why CyberAlertz?</h2>
+        <p>CyberAlertz is designed to protect your entire organization as we work collaboratively with you to develop an
+          operational
+          framework that is optimized for the size and complexity of your company. Our cybersecurity services rely on
+          highly skilled
+          professionals with years of experience to keep your organization defensible against the latest and most
+          sophisticated
+          cyber threats and also help build a sturdy, long-term plan for you.
+        </p>
+      </div> <!-- col -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+
+
+  <!--*************************************** AWARD AND CERTIFICATES **************************************-->
+  <div class="container-fluid p-5 mt-4 award">
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center font-weight-bold text-danger mb-4">We are a recognised leader in cybersecurity known for
+          its strategic services.</p>
+      </div> <!-- col -->
+
+      <div class="row mx-auto p-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="../images/cert1.png" alt="Certificate 1" class="w-75  mx-auto" />
+        </div> <!-- col -->
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="../images/cert2.png" alt="Certificate 2" class="w-75 mx-auto" />
+        </div> <!-- col -->
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="../images/cert3.png" alt="Certificate 3" class="w-75 mx-auto" />
+        </div> <!-- col -->
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="../images/cert4.png" alt="Certificate 4" class="w-75 mx-auto" />
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+
+
+  <!--*************************************** CARDS (TYPE OF SERVICES) **************************************-->
+  <section class="container-fluid p-4 cards">
+    <h2 class="text-danger text-center mt-5 mb-5">Let Us Solve Your Security Problems</h2>
+
+    <div class="card-deck mx-auto mb-5">
+      <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+        <div class="card h-100 shadow">
+          <img src="../images/assessment.png" alt="assessment"
+            class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Security Assessments</h3>
+            <p class="card-text text-justify">Find weaknesses hidden in your systems</p>
+            <a href="securityAssessment.html" class="button">Read More</a>
+          </div> <!-- card-body -->
+        </div> <!-- card-->
+      </div> <!-- col -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+        <div class="card h-100 shadow ">
+          <img src="../images/threat.png" alt="money"
+            class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Threat Management</h3>
+            <p class="card-text text-justify">Identify and respond to cyber threats 24/7</p>
+            <a href="threatManagement.html" class="button">Read More</a>
+          </div> <!-- card-body -->
+        </div> <!-- card-->
+      </div> <!-- col -->
+
+      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 col-sm-12 py-2">
+        <div class="card h-100 shadow">
+          <img src="../images/services.png" alt="money"
+            class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Managed Services</h3>
+            <p class="card-text text-justify">Maximise your investment in technology</p>
+            <a href="managedServices.html" class="button">Read More</a>
+          </div> <!-- card-body -->
+        </div> <!-- card-->
+      </div> <!-- col-->
+    </div> <!-- card-deck -->
+  </section><!-- container-fluid -->
+
+
+  <!--************************************* CAROUSEL (CLIENT'S COMMENTS) *************************************-->
+  <section class="text-center comments" id="carousel">
+    <h2 class="text-danger p-5">Hear What They Say About Us</h2>
+    <div id="clientsComment" class="carousel slide" data-ride="carousel" data-interval="3500">
+      <div class="carousel-inner">
+        <blockquote class="blockquote carousel-item active h-100">
+          <p class="mx-auto col-9 quote">Working with CyberAlertz has been a wonderful experience. The team guides you
+            through step by
+            step on what needs to be done and adjusts your security plans accordingly.</p>
+          <p class="mx-auto col-9 quote">I am very amazed at how efficient and effective their services are.
+          </p>
+          <p class="blockquote-footer"><cite>Head of Security Management Team, Elicia Tan </cite></p>
+        </blockquote>
+
+        <blockquote class="blockquote carousel-item  h-100">
+          <p class="mx-auto col-9 quote ">I really like how the team at CyberAlertz responds very quickly to my
+            questions. I can tell they are very friendly
+            as they will take the extra step to answer any of my questions no matter how trivial it is. All I can say is
+            not only are their
+            cybersecurity services top-notch, they also provide amazing customer service.</p>
+          <p class="blockquote-footer"><cite>Cybersecurity Engineer, Victoria Lee</cite></p>
+        </blockquote>
+
+        <blockquote class="blockquote carousel-item  h-100">
+          <p class="mx-auto col-9 quote ">Honestly, I was very doubtful about getting cybersecurity services online but
+            the team here at CyberAlertz managed
+            to convince me otherwise. They did not pressure me to purchase their services instead took the liberty of
+            providing me a short demonstration of their services. Suffice to say I ended up working with CyberAlertz on
+            multiple projects after this.</p>
+          <p class="blockquote-footer"><cite>Cybersecurity Analyst, Albert Chan</cite></p>
+        </blockquote>
+      </div> <!-- carousel-inner -->
+
+      <a class="carousel-control-prev" href="#clientsComment" role="button" data-slide="prev">
+        <span class="fa fa-chevron-left text-dark" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#clientsComment" role="button" data-slide="next">
+        <span class="fa fa-chevron-right text-dark" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!-- carousel -->
+  </section>
+
+
+  <!--****************************************** NEWSLETTER ******************************************-->
+  <section class="newsletter p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content text-center">
+            <h2 class="text-uppercase text-danger mb-4 wow animate__animated animate__fadeIn">Subscribe to our
+              newsletter</h2>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" />
+            <span class="input-group-btn">
+              <button class="btn bg-dark text-light mt-3" type="submit">Subscribe Now</button>
+            </span>
+          </div> <!-- content -->
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+
+  <!--******************************************** FOOTER ******************************************-->
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 first_segment">
+          <h4 class="text-uppercase text-danger p-4">Address</h4>
+          <p class="text-light footers p-4 ">500 Dover Rd,<br />Singapore,<br />139651</p>
+          <p class="text-light footers pl-4 ">Email: <a
+              href="mailto:cyberalertz@example.com">cyberalertz@example.com</a></p>
+          <p class="text-light footers pl-4">Call: <a href="tel:+6512345678">+65 1234 5678</a></p>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 second_segment">
+          <h4 class="text-uppercase text-danger p-4">Follow Us</h4>
+          <p class="text-light footers p-4 ">Please follow us on these social media platforms to receive latest updates
+            on our services!</p>
+          <a href="#"><i class="fa fa-facebook-square fa-3x ml-3  p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square fa-3x p-1" aria-hidden="true"></i></a>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 third_segment">
+          <h4 class="text-uppercase text-danger p-4">Explore our pages </h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="securityAssessment.html">Security Assessment</a></li>
+            <li><a href="threatManagement.html">Threat Management</a></li>
+            <li><a href="managedServices.html">Managed Services</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </footer>
+</body>
+
+</html>
+
