@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- font awesome cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- animate.css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- wow js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+  <!-- general css stylesheet -->
+  <link href="../css/general.css" rel="stylesheet" type="text/css" />
+  <!-- security assessment page css stylesheet -->
+  <link href="../css/securityAssessment.css" rel="stylesheet" type="text/css" />
+  <!-- contains script for wow js-->
+  <script src="../js/wow.js" defer></script>
+  <!-- timer js file -->
+  <script src="../js/timer.js" defer></script>
+  <title>CyberAlertz:Security Assessments</title>
+</head>
+
+<body>
+  <!--**************************************** NAVIGATION BAR ****************************************-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="home.html" class="navbar-brand">
+        <img src="../images/logo.png" alt="logo" class="logo" />
+      </a>
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+        data-target="#menuItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2 " href="home.html">Home</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="securityAssessment.html">Security
+              Assessment</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="threatManagement.html">Threat
+              Management</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="managedServices.html">Managed
+              Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="contactUs.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" target="_blank"
+              href="citation.html">Citation</a>
+          </li>
+
+        </ul>
+      </div> <!-- collapse -->
+    </nav>
+  </header>
+
+
+  <!--**************************************** BANNER ****************************************-->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 text-light wow animate__animated animate__fadeInLeft">
+          <h1 class="m-0 p-0" id="top">Security Assesment</h1>
+          <p class="mt-3">Secure your network, devices, and sensitive data by identifying
+            vulnerabilities and security defects present in your IT systems.</p>
+          <a href="#aboutAssesments" class="button">Read More</a>
+        </div>
+        <!--col-->
+
+        <div class="col-lg-6 col-md-4 col-sm-12 text-light">
+          <div id="timer">
+            <p class="text-light"><span id="day"></span> , <span id="date"></span> <br /> </p>
+            <p class="text-light">You've been reading for:</p>
+            <p class="text-light"><span id="minutes"></span> minutes : <span id="seconds"></span> seconds </p>
+          </div>
+          <!--timer-->
+        </div>
+        <!--col-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </section>
+
+
+  <!--**************************************** PAGE INTRODUCTION ****************************************-->
+  <div class="container overview">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="pt-5 pb-2 text-danger" id="aboutAssesments">What is a Security Assessment?</h2>
+        <p>Security assessments play a vital role in keeping your data safe as it proactively identifies
+          vulnerabilities in your IT systems. It tests your organization's security preparedness and should be conducted
+          at least once every
+          two years. Carrying out various types of assessment helps you determine what to protect so you can develop the
+          necessary
+          IT security controls and strategies to mitigate risks.
+        </p>
+      </div> <!-- col -->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+
+  <h2 class="text-center p-3 text-danger">Benefits</h2>
+
+
+  <!--***************************************** CARDS(BENEFITS) ******************************************-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card-deck mx-auto mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="../images/paper.png" alt="money"
+              class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+            <div class="card-body">
+              <h3 class="card-title text-center">Easier Future Assessments </h3>
+              <p class="card-text">Having a good security assessment early on in the process makes future assessments
+                much easier to update.</p>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="../images/money.png" alt="money"
+              class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+            <div class="card-body">
+              <h3 class="card-title text-center">Reducing Long Term Cost</h3>
+              <p class="card-text">Identifying potential threats before it causes major damage can help your
+                organization save money in the long run.</p>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 col-sm-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="../images/shield.png" alt="money"
+              class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+            <div class="card-body">
+              <h3 class="card-title text-center">Identify Weakness</h3>
+              <p class="card-text">Helps you see which part of your security measures
+                are relatively weak so you can formulate the most suitable strategy.</p>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+        </div> <!-- col -->
+      </div> <!-- card-deck -->
+    </div> <!-- row -->
+  </div> <!-- container-fluid -->
+
+
+  <!--********************************* FIRST SECTION(NETWORK PENETRATION TESTING) ***********************************-->
+  <div class="container-fluid section_one">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+        <h2 class="p-3 mt-4 text-danger" id="sec1">Network Penetration Testing</h2>
+        <p>Network penetration testing is a simulated cyberattack against your network to uncover vulnerabilities
+          and involves breaching of any number of systems internally or externally. Our penetration testing methodology
+          includes
+          attack simulations carried out by our network security professionals. The team will estimate the overall time
+          according to your security needs as the overall time it takes to complete a network penetration
+          test depends on the size and complexity of your network but with that said, most tests usually take one week
+          to four weeks, start to finish.</p>
+        <img src="../images/networkpentest_cycle.png" class="img-fluid mx-auto d-block"
+          alt="Network Penetration Test Process Cycle" />
+        <!-- nested ul in an ol -->
+        <ol>
+          <li>
+            <p class="font-weight-bold">Planning and Information Gathering</p>
+            <ul>
+              <li>Define the scope and goal of the test, including the testing methods
+                to be used.</li>
+              <li>Gather information about in-scope targets to better understand its potential vulnerabilities.
+                At this stage, penetration testers can identify additional information that may have been overlooked or
+                not provided.</li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="font-weight-bold">Vulnerability Discovery</p>
+            <ul>
+              <li>Attempt to gain access to data or resources through the target by using the latest
+                hacking tools.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="font-weight-bold">Analysis and Exploitation</p>
+            <ul>
+              <li>Analyze results to identify any sensitive data that
+                was accessed, the duration a penetration tester was able to remain undetected in the system and other
+                problems.
+              </li>
+              <li>Formulate a plan to exploit these vulnerabilities in a safe way through manual techniques,
+                cracking tools and much more.</li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="font-weight-bold">Final Review</p>
+            <ul>
+              <li>Clients will be given a detailed report on where the testing was conducted,
+                how vulnerabilities are found and exploited. It also includes the scope of the security
+                testing, testing methodologies and findings.</li>
+              <li>Provide appropriate recommendations and security measures applicable
+                to help clients fix these issues.</li>
+            </ul>
+          </li>
+        </ol>
+      </div> <!-- col -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+
+
+  <!--****************************** SECOND SECTION(WEB APPLICATION PENETRATION TESTING) ********************************-->
+  <div class="container-fluid section_two">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 ">
+        <h2 class="text-danger p-3 mt-4" id="sec2">Web Application Penetration Testing</h2>
+        <p>While network penetration tests focus more on the design, implementation, and maintenance of a network,
+          web application penetration testing is aimed at apps and web servers. Even if you are up to date on software
+          patches
+          and security, cybercriminals are constantly evolving their methods.</p>
+        <p>The process of web application penetration tests is similar to network penetration tests where they go
+          through the
+          same 4 phases.</p>
+        <p>Let us introduce a few methods our team uses in this test: </p>
+        <!-- nested ul in ol -->
+        <ol>
+          <li>
+            <p class="font-weight-bold">URL Manipulation</p>
+            <ul>
+              <li>Attempt to access server file systems</li>
+              <li>Force a server to show unauthorized resources</li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="font-weight-bold">SQL Injection</p>
+            <ul>
+              <li>Gain complete access to data in the server</li>
+              <li>Unauthorized viewing of personal information</li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="font-weight-bold">Denial-of-Service(DoS)</p>
+            <ul>
+              <li>Overwhelm server to disrupt or paralyze services</li>
+              <li>Crash web servers</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <!--col-->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+
+
+  <!--****************************** THIRD SECTION(CAROUSEL:RISK ASSESSMENT) ********************************-->
+  <div class="container-fluid section_three">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 ">
+        <h2 class="text-danger p-3 mt-3" id="sec3">Risk Assessment</h2>
+        <p>Risk assessment is the process of identifying risks and impacts and how to respond to them if it becomes a
+          reality.
+          It is an essential part of any business no matter the size and should be made a priority. Our team of experts
+          at CyberAlertz
+          helps you find these risks that you may not be aware of and deals with them.
+        </p>
+        <p>The steps below outline how CyberAlertz conducts risk assessments.</p>
+
+        <div id="riskAssessment" class="carousel slide text-center mb-5" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#riskAssessment" data-slide-to="0" class="active"></li>
+            <li data-target="#riskAssessment" data-slide-to="1"></li>
+            <li data-target="#riskAssessment" data-slide-to="2"></li>
+            <li data-target="#riskAssessment" data-slide-to="3"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">01 &nbsp;&nbsp;&nbsp;Know Your System</h4>
+              <p class="text-light mx-auto">Here is some information you should prepare before going on to the next
+                step:</p>
+              <p class="text-light">What kind of system do you use?</p>
+              <p class="text-light">Who uses your system? List down every user if possible.</p>
+              <p class="text-light">Where is the information stored?</p>
+              <p class="text-light mb-5">How does information come and go?</p>
+            </div> <!-- carousel-item -->
+
+            <div class="carousel-item">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">02 &nbsp;&nbsp;&nbsp;Determine Risk and Impact</h4>
+              <p class="text-light">Our team consider risks such as unauthorized access and rate the impacts
+                accordingly:</p>
+              <p class="text-light">High - Major damage, unrecoverable files</p>
+              <p class="text-light">Medium - Damaging but recoverable</p>
+              <p class="text-light mb-5">Low - Minimal or non-existent impact</p>
+            </div> <!-- carousel-item -->
+
+            <div class="carousel-item">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">03 &nbsp;&nbsp;&nbsp;Calculate Likelihood</h4>
+              <p class="text-light mb-5 p-5 mx-auto">Take into account the type of vulnerability, the motivation of the
+                hackers and
+                the effectiveness of your security systems to determine the probability of an attack. Once
+                all the possibilities are analyzed, it makes it easier to find which part of the system needs work.</p>
+            </div> <!-- carousel-item -->
+
+            <div class="carousel-item">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">04 &nbsp;&nbsp;&nbsp;Think of a Plan</h4>
+              <p class="text-light mb-5 p-5 mx-auto">Our team gathers all the information in a document and provides
+                recommendations
+                or services you should consider getting to strengthen your security system. </p>
+            </div> <!-- carousel-item -->
+          </div> <!-- carousel-inner -->
+
+          <a class="carousel-control-prev" href="#riskAssessment" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#riskAssessment" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div> <!-- carousel-slide -->
+      </div> <!-- col -->
+    </div> <!-- row -->
+  </div> <!-- container-fluid -->
+
+
+  <!--****************************************** NEWSLETTER ******************************************-->
+  <section class="newsletter p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content text-center">
+            <h2 class="text-uppercase text-danger mb-4 wow animate__animated animate__fadeIn">Subscribe to our
+              newsletter</h2>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" />
+            <span class="input-group-btn">
+              <button class="btn bg-dark text-light mt-3" type="submit">Subscribe Now</button>
+            </span>
+          </div> <!-- content -->
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+
+  <!--******************************************** FOOTER ******************************************-->
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 first_segment">
+          <h4 class="text-uppercase text-danger p-4">Address</h4>
+          <p class="text-light footers p-4 ">500 Dover Rd,<br />Singapore,<br />139651</p>
+          <p class="text-light footers pl-4 ">Email: <a
+              href="mailto:cyberalertz@example.com">cyberalertz@example.com</a></p>
+          <p class="text-light footers pl-4">Call: <a href="tel:+6512345678">+65 1234 5678</a></p>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 second_segment">
+          <h4 class="text-uppercase text-danger p-4">Follow Us</h4>
+          <p class="text-light footers p-4 ">Please follow us on these social media platforms to receive latest updates
+            on our services!</p>
+          <a href="#"><i class="fa fa-facebook-square fa-3x ml-3  p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square fa-3x p-1" aria-hidden="true"></i></a>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 third_segment">
+          <h4 class="text-uppercase text-danger p-4">Explore our pages </h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="securityAssessment.html">Security Assessment</a></li>
+            <li><a href="threatManagement.html">Threat Management</a></li>
+            <li><a href="managedServices.html">Managed Services</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div> <!-- col -->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </footer>
+</body>
+
+</html>

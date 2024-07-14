@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- font awesome cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- animate.css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- wow js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+  <!-- general css stylesheet -->
+  <link href="../css/general.css" rel="stylesheet" type="text/css" />
+  <!-- contactUs page css stylesheet -->
+  <link href="../css/contactUs.css" rel="stylesheet" type="text/css" />
+  <!-- contains script for wow js-->
+  <script src="../js/wow.js" defer></script>
+  <!-- timer js file -->
+  <script src="../js/timer.js" defer></script>
+  <title>CyberAlertz: Contact Us</title>
+</head>
+
+<body>
+  <!--**************************************** NAVIGATION BAR ****************************************-->
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <a href="home.html" class="navbar-brand">
+          <img src="../images/logo.png" alt="logo" class="logo" />
+        </a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+          data-target="#menuItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse " id="menuItems">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light font-weight-bold text-uppercase p-2 " href="home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="securityAssessment.html">Security
+                Assessment</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="threatManagement.html">Threat
+                Management</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="managedServices.html">Managed
+                Services</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="contactUs.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light font-weight-bold text-uppercase p-2" target="_blank"
+                href="citation.html">Citation</a>
+            </li>
+
+          </ul>
+        </div> <!-- navbar-collapse -->
+      </nav>
+    </div> <!-- container-fluid -->
+  </header>
+
+
+  <!--**************************************** BANNER ****************************************-->
+  <section class="banner ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 text-light wow animate__animated animate__fadeInLeft">
+          <h1 class="m-0 p-0">Contact Us</h1>
+          <p class="mt-3">CyberAlertz works collaboratively with you to formulate the best security plan.</p>
+        </div>
+        <!--col-->
+
+        <div class="col-lg-6 col-md-4 col-sm-12 text-light">
+          <div id="timer">
+            <p class="text-light"><span id="day"></span> , <span id="date"></span> <br /> </p>
+            <p class="text-light">You've been reading for:</p>
+            <p class="text-light"><span id="minutes"></span> minutes : <span id="seconds"></span> seconds </p>
+          </div>
+          <!--timer-->
+        </div>
+        <!--col-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </section>
+
+
+  <!--******************************************* FORM ****************************************-->
+  <div class="container-fluid">
+    <form class="contact_us p-4" method="post">
+      <h2 class="title text-uppercase text-center p-3 wow animate__animated animate__fadeIn">stay in touch with us</h2>
+
+      <div class="container">
+        <div class="row contact-form">
+          <div class="form-group col-lg-6">
+            <label for="first_name" class="label">First Name</label>
+            <input type="text" id="first_name" class="form-control" name="first_name" placeholder="e.g Lee" required />
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-6">
+            <label for="last_name" class="label">Last Name</label>
+            <input type="text" id="last_name" class="form-control" name="last_name" placeholder="e.g Chong Wei"
+              required />
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-6">
+            <label for="company" class="label">Company Name</label>
+            <input type="text" id="company" class="form-control" name="company" placeholder="CyberAlertz" required />
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-6">
+            <label for="email" class="label">E-mail</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="cyberalertz@example.com"
+              required />
+            <small id="helptext" class="form-text text-muted">A verification email will be sent to you</small>
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-6">
+            <label for="phone" class="label">Contact Number</label>
+            <input type="tel" id="phone" class="form-control" name="phone" pattern="^[0-9]+$" required />
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-6">
+            <label for="country" class="label">Country</label>
+            <input type="text" id="country" class="form-control" name="country" placeholder="e.g Singapore" />
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-6">
+            <label for="selection" class="label">Interested Services</label>
+            <select class="form-control" id="selection" name="selection">
+              <option>Security Assessment</option>
+              <option>Threat Management</option>
+              <option>Managed Services</option>
+            </select>
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-12">
+            <label for="message" class="label">Message</label>
+            <textarea class="form-control" name="message" id="message" cols="30" rows="5"
+              placeholder="Give us your feedback and comments here!"></textarea>
+          </div> <!-- form-group -->
+
+          <div class="form-group col-lg-12 text-center">
+            <button type="submit" class="submit-btn p-2 text-light ">Submit</button>
+          </div> <!-- form-group -->
+
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </form>
+  </div>
+  <!--container-fluid-->
+
+
+  <!--****************************************** NEWSLETTER ******************************************-->
+  <section class="newsletter p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content text-center">
+            <h2 class="text-uppercase text-danger mb-4 wow animate__animated animate__fadeIn">Subscribe to our
+              newsletter</h2>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" />
+            <span class="input-group-btn">
+              <button class="btn bg-dark text-light mt-3" type="submit">Subscribe Now</button>
+            </span>
+          </div> <!-- content-->
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+
+  <!--******************************************** FOOTER ******************************************-->
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 first_segment">
+          <h4 class="text-uppercase text-danger p-4">Address</h4>
+          <p class="text-light footers p-4 ">500 Dover Rd,<br />Singapore,<br />139651</p>
+          <p class="text-light footers pl-4 ">Email: <a
+              href="mailto:cyberalertz@example.com">cyberalertz@example.com</a></p>
+          <p class="text-light footers pl-4">Call: <a href="tel:+6512345678">+65 1234 5678</a></p>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 second_segment">
+          <h4 class="text-uppercase text-danger p-4">Follow Us</h4>
+          <p class="text-light footers p-4 ">Please follow us on these social media platforms to receive latest updates
+            on our services!</p>
+          <a href="#"><i class="fa fa-facebook-square fa-3x ml-3  p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square fa-3x p-1" aria-hidden="true"></i></a>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 third_segment">
+          <h4 class="text-uppercase text-danger p-4">Explore our pages </h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="securityAssessment.html">Security Assessment</a></li>
+            <li><a href="threatManagement.html">Threat Management</a></li>
+            <li><a href="managedServices.html">Managed Services</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div> <!-- col -->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </footer>
+</body>
+
+</html>

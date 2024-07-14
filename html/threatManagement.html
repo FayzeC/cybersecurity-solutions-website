@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- font awesome cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- animate.css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- wow js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+  <!-- general css stylesheet -->
+  <link href="../css/general.css" rel="stylesheet" type="text/css" />
+  <!-- threat management page css stylesheet -->
+  <link href="../css/threatManagement.css" rel="stylesheet" type="text/css" />
+  <!-- contains script for wow js-->
+  <script src="../js/wow.js" defer></script>
+  <!-- timer js file -->
+  <script src="../js/timer.js" defer></script>
+  <title>CyberAlertz: Threat Management</title>
+</head>
+
+<body>
+  <!--**************************************** NAVIGATION BAR ****************************************-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="home.html" class="navbar-brand">
+        <img src="../images/logo.png" alt="logo" class="logo" />
+      </a>
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+        data-target="#menuItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2 " href="home.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="securityAssessment.html">Security
+              Assessment</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="threatManagement.html">Threat
+              Management</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="managedServices.html">Managed
+              Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" href="contactUs.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold text-uppercase p-2" target="_blank"
+              href="citation.html">Citation</a>
+          </li>
+
+        </ul>
+      </div> <!-- collapse -->
+    </nav>
+  </header>
+
+  <!--**************************************** BANNER ****************************************-->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 text-light wow animate__animated animate__fadeInLeft">
+          <h1 class="m-0 p-0">Threat Management</h1>
+          <p class="mt-3"> Keep an eye out for potential threats. Identify them before its too late!</p>
+          <a href="#aboutManagement" class="button">Read More</a>
+        </div>
+        <!--col-->
+
+        <div class="col-lg-6 col-md-4 col-sm-12 text-light">
+          <div id="timer">
+            <p class="text-light"><span id="day"></span> , <span id="date"></span> <br /> </p>
+            <p class="text-light">You've been reading for:</p>
+            <p class="text-light"><span id="minutes"></span> minutes : <span id="seconds"></span> seconds </p>
+          </div>
+          <!--timer-->
+        </div>
+        <!--col-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </section>
+
+  <!--**************************************** PAGE INTRODUCTION ****************************************-->
+  <div class="container overview">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="pt-5 pb-2 text-danger" id="aboutManagement">What is Threat Management?</h2>
+        <p> Cyber threats are constantly changing and evolving, making them harder to detect. It can strike from
+          anywhere - web sites, social media,
+          email, servers and many more. Just installing a few security software or firewalls isn't going to protect
+          your data from
+          the hands of hackers. The key to having a successful security system is having a good threat management plan.
+          Threat management allows
+          us to identify threats earlier so that cybersecurity officers can make accurate decisions to respond to it
+          as quickly as possible.
+        </p>
+      </div> <!-- col -->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+
+  <h2 class="text-center p-3 text-danger">Benefits</h2>
+
+
+  <!--***************************************** CARDS(BENEFITS) ******************************************-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card-deck mx-auto mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="../images/analysis.png" alt="money"
+              class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+            <div class="card-body">
+              <h3 class="card-title text-center">Detailed Analysis</h3>
+              <p class="card-text">Look deeper into the system for intrusion evidence.</p>
+            </div> <!-- card-body -->
+          </div> <!-- card-->
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="../images/clock.png" alt="money"
+              class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+            <div class="card-body">
+              <h3 class="card-title text-center">Faster Response Time</h3>
+              <p class="card-text">Allows faster and more informed security decisions.</p>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 col-sm-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="../images/monitor.png" alt="money"
+              class="card-img-top w-25 mx-auto wow animate__animated animate__heartBeat" />
+            <div class="card-body">
+              <h3 class="card-title  text-center">24/7 Monitoring</h3>
+              <p class="card-text">Better incident reporting and response to advanced cyber attacks.</p>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+        </div> <!-- col -->
+      </div> <!-- card-deck -->
+    </div> <!-- row-->
+  </div> <!-- container-fluid -->
+
+
+  <!--********************************* FIRST SECTION(THREAT DETECTION) ***********************************-->
+  <div class="container-fluid section_one">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 ">
+        <h2 class="p-3 mt-4 text-danger">Threat Detection</h2>
+        <p>When responding to a security incident, speed matters. The faster a threat is detected,
+          the lesser the damage. Here at CyberAlertz, our team of experts engages in <strong>threat hunting</strong>
+          and <strong>validation</strong> to find threats and any additional information on security breaches. Our
+          threat detection services also include <strong>automated reporting</strong> and <strong>alert
+            systems</strong>
+          to update security teams on the latest status.</p>
+        <p>Common threats detected:</p>
+        <ol>
+          <li>Malware Distribution</li>
+          <li>Data Breaches</li>
+          <li>Suspicious Traffic Patterns</li>
+          <li>Phishing</li>
+          <li>Ransomware</li>
+        </ol>
+      </div>
+      <!--col-->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+
+
+  <!--****************************** SECOND SECTION(THREAT ANALYSIS) ********************************-->
+  <div class="container-fluid section_two">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 ">
+        <h2 class="text-danger p-3 mt-3" id="sec3">Threat Analysis</h2>
+        <p>Threat analysis is a process of identifying and accessing the capabilities of your security systems against
+          real-life cyber attacks. Here at CyberAlertz, our team utilizes threat intelligence to counter cyber attacks.
+          Below are the three types of threat intelligence used in our services:
+        </p>
+
+        <div id="threatAnalysis" class="carousel slide text-center mb-5" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#threatAnalysis" data-slide-to="0" class="active"></li>
+            <li data-target="#threatAnalysis" data-slide-to="1"></li>
+            <li data-target="#threatAnalysis" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">01 &nbsp;&nbsp;&nbsp;Strategic Threat Intelligence</h4>
+              <p class="text-light mb-3 mx-auto p-5">This analysis is usually reserved for non-technical audiences to
+                provide
+                an overview of threat landscapes. Common sources used to gather information include policy documents,
+                research
+                reports and more. This helps clients better understand their defense systems and discuss with us what
+                should be done.</p>
+            </div><!-- carousel-item -->
+
+            <div class="carousel-item">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">02 &nbsp;&nbsp;&nbsp;Tactical Threat Intelligence</h4>
+              <p class="text-light mb-3 mx-auto p-5">Tactical threat intelligence helps determine whether existing
+                security programs
+                will successfully mitigate risks. It allows our team to search and eliminate specific threats and is
+                also
+                used
+                to speed up incident response.</p>
+            </div><!-- carousel-item -->
+
+            <div class="carousel-item">
+              <h4 class="text-danger font-weight-bold mt-5 mb-3">03 &nbsp;&nbsp;&nbsp;Operational Threat Intelligence
+              </h4>
+              <p class="text-light mb-3 mx-auto p-5">In this analysis, our team uses knowledge about cyberattacks or
+                events to give
+                insights into the nature or timing of attacks. It uses details of past known cases as references to act
+                more
+                efficiently when issues arise.</p>
+            </div> <!-- carousel-item -->
+          </div> <!-- carousel-inner -->
+
+          <a class="carousel-control-prev" href="#threatAnalysis" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#threatAnalysis" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div> <!-- carousel-slide -->
+      </div> <!-- col -->
+    </div><!-- row -->
+  </div> <!-- container -->
+
+
+  <!--********************************* THIRD SECTION(RESPONSE) ***********************************-->
+  <div class="container-fluid section_three">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 ">
+        <h2 class="text-danger p-3 mt-4">Response</h2>
+        <p>After going through threat detection and analysis, our team will be able to conduct security operations
+          using detailed information we have gathered.</p>
+        <p>Examples of actions that our team may take to mitigate risks are:</p>
+        <ul>
+          <li>Quarantine affected software</li>
+          <li>Banning hostile files</li>
+          <li>Forensic Analysis</li>
+          <li>Regular Reporting</li>
+        </ul>
+      </div> <!-- col -->
+    </div> <!-- row-->
+  </div> <!-- container-fluid-->
+
+
+  <!--****************************************** NEWSLETTER ******************************************-->
+  <section class="newsletter p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content text-center">
+            <h2 class="text-uppercase text-danger mb-4 wow animate__animated animate__fadeIn">Subscribe to our
+              newsletter</h2>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" />
+            <span class="input-group-btn">
+              <button class="btn bg-dark text-light mt-3" type="submit">Subscribe Now</button>
+            </span>
+          </div> <!-- content -->
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+
+  <!--******************************************** FOOTER ******************************************-->
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 first_segment">
+          <h4 class="text-uppercase text-danger p-4">Address</h4>
+          <p class="text-light footers p-4 ">500 Dover Rd,<br />Singapore,<br />139651</p>
+          <p class="text-light footers pl-4 ">Email: <a
+              href="mailto:cyberalertz@example.com">cyberalertz@example.com</a></p>
+          <p class="text-light footers pl-4">Call: <a href="tel:+6512345678">+65 1234 5678</a></p>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 second_segment">
+          <h4 class="text-uppercase text-danger p-4">Follow Us</h4>
+          <p class="text-light footers p-4 ">Please follow us on these social media platforms to receive latest updates
+            on our services!</p>
+          <a href="#"><i class="fa fa-facebook-square fa-3x ml-3  p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-3x p-1" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square fa-3x p-1" aria-hidden="true"></i></a>
+        </div> <!-- col -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12 third_segment">
+          <h4 class="text-uppercase text-danger p-4">Explore our pages </h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="securityAssessment.html">Security Assessment</a></li>
+            <li><a href="threatManagement.html">Threat Management</a></li>
+            <li><a href="managedServices.html">Managed Services</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div> <!-- col -->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </footer>
+</body>
+
+</html>
